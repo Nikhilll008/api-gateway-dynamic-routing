@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Gateway Mini Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>API Gateway with Dynamic Routing</h1>
+        <p class="subtitle">Mini Project - MCA/BCA</p>
+
+        <p>Click a button below. The request will go to the API Gateway,
+           which will read the route from MySQL database and forward the
+           request to the correct microservice.</p>
+
+        <div class="button-group">
+            <button id="btnUsers" onclick="getUsers()">Get Users</button>
+            <button id="btnProducts" onclick="getProducts()">Get Products</button>
+        </div>
+
+        <h3>Response from Gateway:</h3>
+        <pre id="output">No data yet. Click a button above.</pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
